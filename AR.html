@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR - Geo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@1.0.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="top-bar" id="info-text">...</div>
+    <div id="prev-button-container" class="control-background"><img id="prev-button" src="assets/back.png" alt="Anterior"></div>
+    <div id="play-pause-container" class="control-background"><img id="play-button" src="assets/play.png" alt="Play"><img id="pause-button" src="assets/pause.png" alt="Pause" style="display: none;"></div>
+    <div id="next-button-container" class="control-background"><img id="next-button" src="assets/next.png" alt="Siguiente"></div>
+
+    <a-scene
+        vr-mode-ui='enabled: false'
+        renderer="antialias: true"
+        arjs="sourceType: webcam; video-texture: true; debugUIEnabled: false; position-smoothing: true; smoothing-factor: 0.9;">
+
+        <a-camera gps-camera="position-smoothing: true; smoothing-factor: 0.9;" rotation-reader arjs-device-orientation-controls="smoothingFactor: 0.9;"></a-camera>
+    </a-scene>
+</body>
+</html>
