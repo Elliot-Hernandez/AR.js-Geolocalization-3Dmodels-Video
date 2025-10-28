@@ -1,5 +1,7 @@
 # Proyecto WebAR con Geolocalización usando A-Frame y AR.js, con modelos 3D interactivos, optimización Draco y reproductor de video.
 
+[English below]
+
 Una aplicación de Realidad Aumentada (WebAR) que utiliza A-Frame y AR.js para mostrar una galería de arte virtual, anclada a una coordenada GPS específica.
 
 El proyecto despliega X modelos 3D diferentes junto con un reproductor de video persistente. Los usuarios pueden navegar por la galería, interactuar con los modelos 3D y controlar la reproducción del video.
